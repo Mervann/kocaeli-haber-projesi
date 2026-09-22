@@ -1,0 +1,827 @@
+/* ══════════════════════════════════════════════════════════════
+   Kocaeli Haber İzleme Sistemi – Premium Dark Glassmorphism UI
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── CSS Variables ─────────────────────────────────────────── */
+:root {
+    --bg-primary: #0f1117;
+    --bg-secondary: #1a1d27;
+    --bg-card: rgba(26, 29, 39, 0.85);
+    --bg-glass: rgba(255, 255, 255, 0.04);
+    --bg-glass-hover: rgba(255, 255, 255, 0.08);
+
+    --text-primary: #e8eaed;
+    --text-secondary: #9aa0a6;
+    --text-muted: #5f6368;
+
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(255, 255, 255, 0.15);
+
+    --accent: #6c63ff;
+    --accent-glow: rgba(108, 99, 255, 0.3);
+
+    /* News type colors */
+    --color-trafik: #ef4444;
+    --color-yangin: #f97316;
+    --color-elektrik: #eab308;
+    --color-hirsizlik: #a855f7;
+    --color-kultur: #22c55e;
+
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-width: 340px;
+    --header-height: 64px;
+
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: var(--font);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ── Header ────────────────────────────────────────────────── */
+#app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background: rgba(15, 17, 23, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--accent);
+}
+
+.logo h1 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    background: linear-gradient(135deg, var(--accent), #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+    border-left: 1px solid var(--border-color);
+    padding-left: 16px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.news-count {
+    background: var(--bg-glass);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.news-count span {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* ── Buttons ───────────────────────────────────────────────── */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition);
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent), #7c3aed);
+    color: white;
+    box-shadow: 0 2px 12px var(--accent-glow);
+}
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px var(--accent-glow);
+}
+.btn-primary:active {
+    transform: translateY(0);
+}
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-accent {
+    background: var(--accent);
+    color: white;
+    flex: 1;
+}
+.btn-accent:hover {
+    background: #5b54e0;
+}
+
+.btn-ghost {
+    background: var(--bg-glass);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    flex: 1;
+}
+.btn-ghost:hover {
+    background: var(--bg-glass-hover);
+    color: var(--text-primary);
+}
+
+/* ── Main Layout ───────────────────────────────────────────── */
+#app-main {
+    display: flex;
+    height: calc(100vh - var(--header-height));
+    margin-top: var(--header-height);
+}
+
+/* ── Sidebar ───────────────────────────────────────────────── */
+.sidebar {
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-width);
+    background: var(--bg-secondary);
+    border-right: 1px solid var(--border-color);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-section {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.filter-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+/* ── Checkbox Filters ──────────────────────────────────────── */
+.filter-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background var(--transition);
+    position: relative;
+}
+.checkbox-item:hover {
+    background: var(--bg-glass-hover);
+}
+
+.checkbox-item input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox-marker {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    position: relative;
+    border: 2px solid transparent;
+    transition: all var(--transition);
+}
+.checkbox-item input:not(:checked) + .checkbox-marker {
+    opacity: 0.3;
+}
+
+.marker-trafik  { background: var(--color-trafik);  }
+.marker-yangin  { background: var(--color-yangin);  }
+.marker-elektrik { background: var(--color-elektrik); }
+.marker-hirsizlik { background: var(--color-hirsizlik); }
+.marker-kultur  { background: var(--color-kultur);  }
+
+.checkbox-text {
+    font-size: 13px;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.checkbox-count {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--bg-glass);
+    padding: 2px 6px;
+    border-radius: 10px;
+    min-width: 22px;
+    text-align: center;
+}
+
+/* ── Select ────────────────────────────────────────────────── */
+.filter-select {
+    width: 100%;
+    padding: 9px 12px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 13px;
+    cursor: pointer;
+    transition: border var(--transition);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%239aa0a6' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+.filter-select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* ── Date inputs ───────────────────────────────────────────── */
+.date-inputs {
+    display: flex;
+    gap: 8px;
+}
+.date-field {
+    flex: 1;
+}
+.date-field label {
+    display: block;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+.filter-date {
+    width: 100%;
+    padding: 8px 10px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 12px;
+}
+.filter-date:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* ── Sidebar Actions ───────────────────────────────────────── */
+.sidebar-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* ── Scraping Status ───────────────────────────────────────── */
+.scrape-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: rgba(108, 99, 255, 0.08);
+    border: 1px solid rgba(108, 99, 255, 0.2);
+    border-radius: var(--radius-sm);
+}
+.scrape-status span {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(108, 99, 255, 0.2);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ── News List ─────────────────────────────────────────────── */
+.news-list-section {
+    flex: 1;
+    overflow-y: auto;
+    border-bottom: none;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.news-item {
+    padding: 16px 18px;
+    background: var(--bg-glass);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+.news-item:hover {
+    background: var(--bg-glass-hover);
+    transform: translateX(2px);
+}
+
+.news-item[data-type="Trafik Kazası"]      { border-left-color: var(--color-trafik);  }
+.news-item[data-type="Yangın"]             { border-left-color: var(--color-yangin);  }
+.news-item[data-type="Elektrik Kesintisi"] { border-left-color: var(--color-elektrik); }
+.news-item[data-type="Hırsızlık"]         { border-left-color: var(--color-hirsizlik); }
+.news-item[data-type="Kültürel Etkinlikler"] { border-left-color: var(--color-kultur); }
+
+.news-item-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-item-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.news-item-type {
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ── Map ───────────────────────────────────────────────────── */
+#map-container {
+    flex: 1;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Leaflet overrides for dark theme */
+.leaflet-container {
+    background: #1a1d27;
+}
+
+.leaflet-popup-content-wrapper {
+    background: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: var(--shadow) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.leaflet-popup-content {
+    margin: 0 !important;
+    font-family: var(--font) !important;
+}
+
+.leaflet-popup-tip {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: none !important;
+}
+
+.leaflet-popup-close-button {
+    color: var(--text-muted) !important;
+    font-size: 18px !important;
+    padding: 6px 8px !important;
+}
+
+/* ── Popup Content ─────────────────────────────────────────── */
+.popup-content {
+    padding: 24px;
+    min-width: 320px;
+    max-width: 400px;
+}
+
+.popup-type-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.popup-type-badge.type-trafik    { background: rgba(239,68,68,0.15); color: var(--color-trafik); }
+.popup-type-badge.type-yangin    { background: rgba(249,115,22,0.15); color: var(--color-yangin); }
+.popup-type-badge.type-elektrik  { background: rgba(234,179,8,0.15); color: var(--color-elektrik); }
+.popup-type-badge.type-hirsizlik { background: rgba(168,85,247,0.15); color: var(--color-hirsizlik); }
+.popup-type-badge.type-kultur    { background: rgba(34,197,94,0.15); color: var(--color-kultur); }
+
+.popup-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.popup-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.popup-info-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.popup-info-row svg {
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+.popup-sources {
+    margin-bottom: 12px;
+}
+
+.popup-sources-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.popup-source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 2px 0;
+    transition: color var(--transition);
+}
+.popup-source-link:hover {
+    color: #a78bfa;
+}
+
+.popup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 8px;
+    background: linear-gradient(135deg, var(--accent), #7c3aed);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all var(--transition);
+}
+.popup-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* ── Loading Overlay ───────────────────────────────────────── */
+#loading-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 17, 23, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+}
+
+.loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.spinner-large {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(108, 99, 255, 0.2);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.loading-content p {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* ── Empty State ───────────────────────────────────────────── */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.empty-state svg {
+    opacity: 0.3;
+    margin-bottom: 12px;
+}
+
+.empty-state p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* ── Custom Leaflet Markers ────────────────────────────────── */
+.custom-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    border: 3px solid rgba(255,255,255,0.9);
+    transition: transform 0.2s ease;
+}
+.custom-marker:hover {
+    transform: rotate(-45deg) scale(1.15);
+}
+
+.custom-marker .marker-icon {
+    transform: rotate(45deg);
+    font-size: 20px;
+    line-height: 1;
+}
+
+.marker-trafik-bg    { background: var(--color-trafik);  }
+.marker-yangin-bg    { background: var(--color-yangin);  }
+.marker-elektrik-bg  { background: var(--color-elektrik); }
+.marker-hirsizlik-bg { background: var(--color-hirsizlik); }
+.marker-kultur-bg    { background: var(--color-kultur);  }
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        min-width: unset;
+        max-height: 40vh;
+    }
+
+    #app-main {
+        flex-direction: column;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .logo h1 {
+        font-size: 15px;
+    }
+}
+
+/* ── Animations ────────────────────────────────────────────── */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.news-item {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.news-item:nth-child(1)  { animation-delay: 0.02s; }
+.news-item:nth-child(2)  { animation-delay: 0.04s; }
+.news-item:nth-child(3)  { animation-delay: 0.06s; }
+.news-item:nth-child(4)  { animation-delay: 0.08s; }
+.news-item:nth-child(5)  { animation-delay: 0.10s; }
+.news-item:nth-child(6)  { animation-delay: 0.12s; }
+.news-item:nth-child(7)  { animation-delay: 0.14s; }
+.news-item:nth-child(8)  { animation-delay: 0.16s; }
+.news-item:nth-child(9)  { animation-delay: 0.18s; }
+.news-item:nth-child(10) { animation-delay: 0.20s; }
+
+/* ── Stats Modal ───────────────────────────────────────────── */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.stats-modal-content {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 24px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    color: var(--text-primary);
+}
+
+.stats-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stats-modal-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.stats-btn-close {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+.stats-btn-close:hover {
+    color: white;
+}
+
+.stats-modal-body {
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.stats-source-group {
+    margin-bottom: 24px;
+    padding: 16px;
+    background: var(--bg-glass);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+}
+
+.stats-source-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.stats-source-count {
+    background: rgba(108, 99, 255, 0.2);
+    color: #a78bfa;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.stats-news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stats-news-item {
+    font-size: 13px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stats-news-item a {
+    color: var(--text-primary);
+    text-decoration: none;
+    display: inline-block;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.stats-news-item a:hover {
+    color: var(--accent);
+}
+.stats-news-type {
+    font-size: 11px;
+    color: var(--text-muted);
+}

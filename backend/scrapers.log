@@ -1,0 +1,676 @@
+Kocaeli News Scraper Log
+========================================
+02:35:57 [INFO] ============================================================
+02:35:57 [INFO] Kocaeli Urban News Monitoring System
+02:35:57 [INFO] Google Maps API Key: SET
+02:35:57 [INFO] ============================================================
+02:35:57 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02:35:57 [INFO] [33mPress CTRL+C to quit[0m
+02:59:25 [INFO] ============================================================
+02:59:25 [INFO] Kocaeli Urban News Monitoring System
+02:59:25 [INFO] Google Maps API Key: SET
+02:59:25 [INFO] ============================================================
+04:08:56 [INFO] ============================================================
+04:08:56 [INFO] Kocaeli Urban News Monitoring System
+04:08:56 [INFO] Google Maps API Key: SET
+04:08:56 [INFO] ============================================================
+14:11:55 [INFO] ============================================================
+14:11:55 [INFO] Kocaeli Urban News Monitoring System
+14:11:55 [INFO] Google Maps API Key: SET
+14:11:55 [INFO] ============================================================
+14:14:54 [INFO] [Cleanup] Deleted 0 news articles older than 3 days.
+14:14:54 [INFO] [Scrape] 5 scraper paralel başlatıldı: Çağdaş Kocaeli, Özgür Kocaeli, Ses Kocaeli, Yeni Kocaeli, Bizim Yaka
+14:14:54 [INFO] [Çağdaş Kocaeli] Starting scrape for last 3 days...
+14:14:54 [INFO] [Özgür Kocaeli] Starting scrape for last 3 days...
+14:14:54 [INFO] [Ses Kocaeli] Starting scrape for last 3 days...
+14:14:54 [INFO] [Yeni Kocaeli] Starting scrape for last 3 days...
+14:14:54 [INFO] [Bizim Yaka] Starting scrape for last 3 days...
+14:15:03 [INFO] [Ses Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:seskocaeli.com+Kocaeli+after:2026-04-03+before:2026-04-04&hl=tr&gl=TR&ceid=TR:
+14:15:04 [INFO] [Ses Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:seskocaeli.com+Kocaeli+after:2026-04-02+before:2026-04-03&hl=tr&gl=TR&ceid=TR:
+14:15:04 [INFO] [Ses Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:seskocaeli.com+Kocaeli+after:2026-04-01+before:2026-04-02&hl=tr&gl=TR&ceid=TR:
+14:15:04 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/kocaeli-asayis-haberleri
+14:15:05 [ERROR] [Ses Kocaeli] Attempt 1 failed for https://www.seskocaeli.com/kocaeli-gundem-haberleri: HTTP Error 404: 
+14:15:05 [INFO] [Yeni Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:yenikocaeli.com+Kocaeli+after:2026-04-03+before:2026-04-04&hl=tr&gl=TR&ceid=TR
+14:15:05 [INFO] [Çağdaş Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:cagdaskocaeli.com.tr+Kocaeli+after:2026-04-03+before:2026-04-04&hl=tr&gl=TR&ce
+14:15:06 [INFO] [Yeni Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:yenikocaeli.com+Kocaeli+after:2026-04-02+before:2026-04-03&hl=tr&gl=TR&ceid=TR
+14:15:06 [ERROR] [Ses Kocaeli] Attempt 2 failed for https://www.seskocaeli.com/kocaeli-gundem-haberleri: HTTP Error 404: 
+14:15:06 [INFO] [Yeni Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:yenikocaeli.com+Kocaeli+after:2026-04-01+before:2026-04-02&hl=tr&gl=TR&ceid=TR
+14:15:06 [INFO] [Çağdaş Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:cagdaskocaeli.com.tr+Kocaeli+after:2026-04-02+before:2026-04-03&hl=tr&gl=TR&ce
+14:15:06 [ERROR] [Ses Kocaeli] Attempt 1 failed for https://www.seskocaeli.com/kocaeli-guncel-haberleri: HTTP Error 404: 
+14:15:06 [INFO] [Özgür Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:ozgurkocaeli.com.tr+after:2026-04-03+before:2026-04-04&hl=tr&gl=TR&ceid=TR:tr
+14:15:07 [INFO] [Çağdaş Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:cagdaskocaeli.com.tr+Kocaeli+after:2026-04-01+before:2026-04-02&hl=tr&gl=TR&ce
+14:15:07 [INFO] [Özgür Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:ozgurkocaeli.com.tr+after:2026-04-02+before:2026-04-03&hl=tr&gl=TR&ceid=TR:tr
+14:15:07 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/kocaeli-asayis-haberleri
+14:15:07 [INFO] [Özgür Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:ozgurkocaeli.com.tr+after:2026-04-01+before:2026-04-02&hl=tr&gl=TR&ceid=TR:tr
+14:15:07 [ERROR] [Ses Kocaeli] Attempt 2 failed for https://www.seskocaeli.com/kocaeli-guncel-haberleri: HTTP Error 404: 
+14:15:07 [INFO] [Ses Kocaeli] Found 33 article links.
+14:15:07 [ERROR] [Bizim Yaka] Attempt 1 failed for https://www.bizimyaka.com/kocaeli-gundem-haberleri: HTTP Error 404: 
+14:15:08 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27744330/cinayetin-altindan-31-yillik-aile-trajedisi-cikti
+14:15:08 [INFO] [Özgür Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:ozgurkocaeli.com.tr+haber+after:2026-04-03+before:2026-04-04&hl=tr&gl=TR&ceid=
+14:15:08 [INFO] [Özgür Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:ozgurkocaeli.com.tr+haber+after:2026-04-02+before:2026-04-03&hl=tr&gl=TR&ceid=
+14:15:08 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27743520/kocaeli-dahil-13-ilde-change-operasyonu
+14:15:08 [ERROR] [Bizim Yaka] Attempt 2 failed for https://www.bizimyaka.com/kocaeli-gundem-haberleri: HTTP Error 404: 
+14:15:09 [INFO] [Özgür Kocaeli] 200 OK: https://news.google.com/rss/search?q=site:ozgurkocaeli.com.tr+haber+after:2026-04-01+before:2026-04-02&hl=tr&gl=TR&ceid=
+14:15:09 [ERROR] [Bizim Yaka] Attempt 1 failed for https://www.bizimyaka.com/kocaeli-yasam-haberleri: HTTP Error 404: 
+14:15:09 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27743280/cifte-cinayet-isleyen-yasli-adam-ilk-kez-hakim-karsisinda
+14:15:09 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27741897/imamoglu-davasinda-18-sanik-tahliye-edildi
+14:15:10 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27740912/temde-otomobil-devrilen-tir-dorsesinin-altinda-kaldi
+14:15:10 [ERROR] [Bizim Yaka] Attempt 2 failed for https://www.bizimyaka.com/kocaeli-yasam-haberleri: HTTP Error 404: 
+14:15:10 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/kocaeli-siyaset-haberleri
+14:15:10 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27740887/binlerce-liralik-kablo-calan-hirsizlarin-bindigi-motosiklet-de-calinti-cikti
+14:15:11 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27740004/oz-kardesini-olduren-sahis-tutuklandi
+14:15:11 [ERROR] [Bizim Yaka] Attempt 1 failed for https://www.bizimyaka.com/kocaeli-guncel-haberleri: HTTP Error 404: 
+14:15:11 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27739779/tem-otoyolu-izmit-gecisinde-feci-kaza-2-olu
+14:15:11 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27739034/korkunc-cinayette-saniklarin-cezalari-belli-oldu
+14:15:12 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27738514/ucakta-canli-bomba-sakasina-4-yil-hapis
+14:15:12 [ERROR] [Bizim Yaka] Attempt 2 failed for https://www.bizimyaka.com/kocaeli-guncel-haberleri: HTTP Error 404: 
+14:15:12 [INFO] [Bizim Yaka] Found 66 article links.
+14:15:12 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27744223/korkunc-cinayetin-altindan-31-yillik-aile-trajedisi-cikti-babasinin-da-katili-c
+14:15:12 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27738104/kamyondan-dusen-tomruk-otomobile-saplandi
+14:15:12 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27744088/7-yil-hapis-cezasi-bulunan-firari-kiskivrak-yakalandi
+14:15:13 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27725601/cifte-cinayetin-davasi-basliyor
+14:15:13 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27743787/ust-aramasiyla-basladi-evinden-suc-unsurlari-cikti
+14:15:13 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27725111/kanli-gecenin-9-suphelisi-adliyeye-sevk-edildi
+14:15:13 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27724761/kayip-cocuk-12-saatte-bulundu
+14:15:13 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27735461/d-650de-3-tirin-karistigi-zincirleme-kaza
+14:15:13 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27743494/verdigi-paranin-2-katini-alacagi-vaadiyle-3-milyon-tl-dolandirildi
+14:15:14 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27724079/intihar-girisiminde-bulunan-fenomen-taburcu-edildi
+14:15:14 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27743126/baba-ve-oglu-sokak-ortasinda-olduren-yasli-adam-keske-dolandirilmasaydim
+14:15:14 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27723886/bursa-buyuksehir-belediye-baskani-bozbey-gozaltina-alindi
+14:15:14 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27723247/bicaklanan-17-yasindaki-genc-hayatini-kaybetti
+14:15:14 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27735035/kurucesme-giselerinde-korkutan-kaza
+14:15:14 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27742587/internetten-silah-satisina-kocaeli-dahil-16-ilde-35-gozalti
+14:15:15 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27734870/okul-cikisi-kaybolan-kizlar-bulundu
+14:15:15 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27742570/umre-hayali-kabusa-dondu-200-kisi-dolandirildigini-iddia-ederek-solugu-karakold
+14:15:15 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27734744/golcukte-iki-ortaokul-ogrencisi-araniyor
+14:15:15 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27742559/temde-otomobil-devrilen-tir-dorsesinin-altinda-kaldi-kari-koca-hayatini-kaybett
+14:15:16 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27732801/uyusturucu-saticisi-basiskelede-yakalandi
+14:15:16 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27742548/200-bin-liralik-kablo-calan-hirsizlarin-bindigi-motosiklet-de-calinti-cikti
+14:15:16 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27742530/elektrik-akimina-kapilan-yasli-adam-hayatini-kaybetti
+14:15:16 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27732237/iflas-aciklayan-otomotiv-firmasinin-magdurlarindan-suc-duyurusu
+14:15:17 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27740343/kasten-oldurmeden-aranan-hukumlu-yakalandi
+14:15:17 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27731990/oz-abisi-tarafindan-oldurulmus
+14:15:17 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com
+14:15:17 [INFO] [Yeni Kocaeli] Found 189 article links.
+14:15:17 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/kocaeli-asayis-haberleri
+14:15:17 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27730870/saglik-ocaginin-arkasinda-ceset-bulundu
+14:15:17 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27731938/6-yasindaki-elanin-oldugu-servis-kazasinda-kucuk-kiz-asli-kusurlu-bulundu
+14:15:17 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/kocaeli-gundem-haberleri
+14:15:17 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/siyaset/gundem-su-krizi-ve-egitim/193608.html
+14:15:18 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27730612/genc-ogretmen-enfeksiyona-kurban-gitti
+14:15:18 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/rss
+14:15:18 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27731727/kocaelide-korsan-servislere-gecit-yok
+14:15:18 [ERROR] [Özgür Kocaeli] Attempt 1 failed for https://www.ozgurkocaeli.com.tr/feed: HTTP Error 404: 
+14:15:18 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/spor/kandirada-gures-heyecani-15-temmuzda-yasanacak/193607.html
+14:15:18 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27729287/izmitteki-kanli-gece-1844-saatlik-kayitla-cozuldu-ikiz-plaka-detayi-ortaya-cika
+14:15:18 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27730953/sokakta-hareketsiz-yatan-sahsin-hayatini-kaybettigi-belirlendi
+14:15:18 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27740106/kardesini-pusu-kurup-olduren-agabey-tutuklandi
+14:15:18 [ERROR] [Çağdaş Kocaeli] Attempt 1 failed for https://www.cagdaskocaeli.com.tr/kocaeli-guncel-haberleri: HTTP Error 404: 
+14:15:19 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27729669/kanli-gecenin-operasyon-goruntuleri-ortaya-cikti
+14:15:19 [ERROR] [Özgür Kocaeli] Attempt 2 failed for https://www.ozgurkocaeli.com.tr/feed: HTTP Error 404: 
+14:15:19 [INFO] [Özgür Kocaeli] Blocked or 403, trying Google Cache: https://www.ozgurkocaeli.com.tr/feed
+14:15:19 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27729210/kotu-koku-ihbari-ekipleri-alarma-gecirdi
+14:15:19 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27728712/kuzey-marmara-otoyolunda-yolcu-otobusu-tira-carpti-10-yarali
+14:15:19 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/kultur-sanat/cocuk-atolyeleri-duzenlenecek/193606.html
+14:15:19 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27728456/kotu-koku-ihbari-ekipleri-alarma-gecirdi
+14:15:19 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27727213/bicaklayip-oldurmustu-cinayet-zanlisi-tutuklandi
+14:15:19 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27727741/17-yasindaki-genci-boyle-oldurmus
+14:15:19 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27726725/temde-tunel-icinde-4-arac-carpisti-sikisan-tir-surucusu-yaralandi
+14:15:20 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27727473/17-yasindaki-genci-olduren-sahis-tutuklandi
+14:15:20 [ERROR] [Çağdaş Kocaeli] Attempt 2 failed for https://www.cagdaskocaeli.com.tr/kocaeli-guncel-haberleri: HTTP Error 404: 
+14:15:20 [INFO] [Çağdaş Kocaeli] Found 59 article links.
+14:15:20 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27739766/temde-zincirleme-kaza-2-kisi-hayatini-kaybetti
+14:15:20 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27744485/daricada-kardesini-pusu-kurarak-oldurmustu-yillar-once-babasini-da-oldur
+14:15:20 [INFO] [Ses Kocaeli] 200 OK: https://www.seskocaeli.com/haber/27726679/tir-surucusu-yaralandi-temde-zincirleme-kaza
+14:15:20 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/kultur-sanat/dumlupinar-faciasi-golcukte-tiyatro-sahnesinde-canlandirilacak/193605.htm
+14:15:20 [INFO] [Ses Kocaeli] Scraped 22 articles.
+14:15:20 [INFO] [Done] Ses Kocaeli: 22 haber bulundu.
+14:15:20 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27739611/kocaelinin-de-bulundugu-13-il-merkezli-siber-operasyon-183-kisi-yakalandi
+14:15:20 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27743686/izmitte-uyusturucu-ve-sahte-para-operasyonu
+14:15:20 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/keske-dolandirilmasaydim/193604.html
+14:15:21 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27739046/cesedi-ormana-gomup-mahkemede-birbirini-suclayan-kardesler-cezadan-kurtulamadi
+14:15:21 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27743602/cayirovada-3-milyon-liralik-dolandiricilik-iddiasi-parayi-okul-cantasiyl
+14:15:21 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27739029/uzun-yol-soforu-evinde-hayatina-son-verdi
+14:15:21 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27743030/karamurselde-baba-ogul-cinayeti-davasinda-sanik-ilk-kez-hakim-karsisinda
+14:15:21 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/hedef-2027de-400-arac/193603.html
+14:15:22 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27738922/yagma-sucundan-aranan-sahis-yakayi-ele-verdi
+14:15:22 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27742502/kocaeli-dahil-16-ilde-silah-ve-dijital-suc-operasyonu-35-gozalti
+14:15:22 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/aileler-sporda-olsun-projesi-farkindalikla-buyuyor/193602.html
+14:15:22 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27738907/fuhus-sucundan-aranan-sahis-izmitte-yakalandi
+14:15:22 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27741414/kocaeli-ve-sakaryada-umre-vurgunu-ucus-gunu-aci-gercegi-ogrendiler
+14:15:23 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27738638/8-yil-hapis-cezasi-bulunan-zehir-taciri-izmitte-yakalandi
+14:15:23 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740757/tem-kocaeli-gecisindeki-kazada-kari-koca-hayatini-kaybetti
+14:15:23 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/korfez-belediyesi-ozel-cocuklari-unutmadi/193601.html
+14:15:23 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740716/kocaeliden-gumushaneye-gitmisti-kopruyu-onarmak-isterken-feci-sekilde-ca
+14:15:23 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27738278/son-durak-filmi-gercek-oldu-kamyondan-dusen-tomruk-seyir-halindeki-otomobile-sa
+14:15:24 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/umre-hayali-kabusa-dondu-200-kisi-dolandirildigini-iddia-ederek-solugu-ka
+14:15:24 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27737152/4-yil-hapis-cezasi-bulunan-hukumlu-yakalandi
+14:15:25 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740597/kocaelide-yagma-sucundan-aranan-hukumlu-operasyonla-yakalandi
+14:15:25 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27737134/26-yasindaki-katil-operasyonla-yakalandi
+14:15:26 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27732705/6-yil-hapis-cezasi-bulunan-zehir-taciri-yakalandi
+14:15:26 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/temde-otomobil-devrilen-tir-dorsesinin-altinda-kaldi-kari-koca-hayatini-k
+14:15:27 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27732689/kocaelide-cocuklari-dilendiren-ailelere-ceza-yagdi
+14:15:27 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740419/basiskelede-200-bin-tllik-kablo-vurgunu-izmitteki-gizli-adreste-yakaland
+14:15:27 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/spor/ozel-bireyler-ve-basketbolcular-potada-bulustu/193596.html
+14:15:27 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27732125/tirin-altindaki-kaskli-katil-agabeyi-cikti
+14:15:28 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27731927/kayiplara-karisan-galericiden-magdura-teselli-senin-derdin-1-bizim-50-kendini-u
+14:15:28 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740039/kocaelide-pusu-kurup-kardesini-olduren-agabey-tutuklandi
+14:15:28 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/daricada-ogrenciler-trafik-kurallarini-uygulamali-ogreniyor/193589.html
+14:15:28 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27731871/pusu-kuran-agabey-kardesini-oldurdu
+14:15:29 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27740094/yeniden-refah-partisi-heyetinden-kaskf-baskani-murat-aydina-ziyaret
+14:15:29 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27730546/izmitli-ogretmen-genc-yasta-yakalandigi-hastaliga-yenik-dustu
+14:15:29 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/saglik-ve-ekonomide-guclu-sistem-hedefi-bu-gorusmede-ele-alindi/193588.html
+14:15:29 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27740098/boran-otv-muafiyetli-arac-alim-hakki-askiya-alinamaz
+14:15:30 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27730451/polisten-kacan-alkollu-surucuye-360-bin-lira-ceza
+14:15:30 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/kartepede-yesil-alanlarda-bakim-ve-temizlik-calismalari-suruyor/193587.html
+14:15:30 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27740082/karamursel-saadetten-pazarcilar-odasina-hayirli-olsun-ziyareti
+14:15:30 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27740075/muhip-kanko-bu-sahtekarlik-degil-topluma-buyuk-ihanet
+14:15:31 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27730155/trafikte-yurekleri-agza-getirdi-d-100de-kilometrelerce-ters-yonde-gitti
+14:15:31 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27740052/selcuk-ozdag-kocaelide-konustu-turkiyede-servet-transferi-var
+14:15:31 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/hastanede-deprem-farkindaligi-etkinligi/193586.html
+14:15:31 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27740058/gergerlioglu-eyy-amerikadan-nato-ussune
+14:15:31 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27738421/dogum-gununde-siyasete-ilk-adim
+14:15:31 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27733472/sp-karamurselden-esnaf-odasina-ziyaret
+14:15:31 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739898/tem-kocaeli-gecisinde-zincirleme-kaza-2-olu-yol-kapandi
+14:15:31 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/spor/sakatlanan-futbolcuyu-macin-hakemi-kucaginda-tasidi/193582.html
+14:15:32 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27733463/lutfu-turkkandan-gebze-yorumu-bu-bir-cinayet
+14:15:32 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27729357/izmitte-3-kisinin-oldugu-kanli-saldirida-6-sahis-tutuklandi
+14:15:32 [INFO] [Özgür Kocaeli] Google Cache OK: https://www.ozgurkocaeli.com.tr/feed
+14:15:32 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/rss.xml
+14:15:32 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27733470/mhp-heyetinden-kocaelispora-moral-ziyareti-kocaelispor-bu-sehrin-ortak-gururudu
+14:15:32 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr
+14:15:33 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27728505/kartepede-kotu-koku-ihbari-afad-ve-itfaiye-ekipleri-alarma-gecti
+14:15:33 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/kocaeli-asayis-haberleri
+14:15:33 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/ortak-akilla-daha-guclu-derince/193580.html
+14:15:33 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27733453/saadet-partisi-kocaeliden-trafik-cezasi-cikisi-hedef-guvenlik-mi-yoksa-gelir-ka
+14:15:33 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27727702/kocaelide-17-yasindaki-denizi-olduren-zanli-tutuklandi
+14:15:33 [ERROR] [Özgür Kocaeli] Attempt 1 failed for https://www.ozgurkocaeli.com.tr/kocaeli-gundem-haberleri: HTTP Error 404: 
+14:15:33 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739468/kocaeli-polisinden-fuhus-operasyonu-15-yil-hapisle-aranan-firari-yakalan
+14:15:33 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27685181/iyi-parti-izmitte-sahaya-iniyor
+14:15:34 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27685188/yrpde-gorev-dagilimi-yapildi
+14:15:34 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/kadinlar-icin-yeni-bulusma-noktasi/193577.html
+14:15:34 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27685053/kanko-vatandaslar-ekonomik-cehennemi-yasiyor
+14:15:34 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739368/kocaeli-emniyetinden-nokta-operasyon-yol-kesen-firari-yakalandi
+14:15:34 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27733431/gergerlioglu-dilovasi-ve-gayrettepe-yangin-facialarini-ofg-tvde-konuklariyla-de
+14:15:34 [ERROR] [Özgür Kocaeli] Attempt 2 failed for https://www.ozgurkocaeli.com.tr/kocaeli-gundem-haberleri: HTTP Error 404: 
+14:15:34 [INFO] [Özgür Kocaeli] Blocked or 403, trying Google Cache: https://www.ozgurkocaeli.com.tr/kocaeli-gundem-haberleri
+14:15:34 [INFO] [Özgür Kocaeli] Google Cache OK: https://www.ozgurkocaeli.com.tr/kocaeli-gundem-haberleri
+14:15:35 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739258/izmitte-narkotik-operasyonu-8-yil-hapisle-aranan-zehir-taciri-yakalandi
+14:15:35 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27684974/gergerlioglu-newroz-kutlamalarindaki-polis-siddetini-tbmm-gundemine-tasidi
+14:15:35 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/kartepede-sahada-iletisim-toplumda-farkindalik-egitimi/193576.html
+14:15:35 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27682907/mhpden-izmitin-cinarlarina-anlamli-ziyaretler
+14:15:35 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27678842/aydin-unluden-vali-aktasa-ziyaret
+14:15:35 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27733440/muhip-kanko-bir-aile-yok-oldu-bunun-hesabini-kim-verecek
+14:15:35 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739157/kocaelide-serdar-arslan-cinayetinde-karar-2-saniga-agirlastirilmis-muebb
+14:15:35 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/spor/euro-2016nin-mimari-selcuk-inandan-milli-takim-yorumu/193573.html
+14:15:36 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27731264/talus-yeni-il-binasi-temeli-nisan-sonunda-atilacak
+14:15:36 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27738094/izmitte-tomruk-yuklu-kamyondan-firlayan-kutuk-otomobile-saplandi-surucu-
+14:15:36 [ERROR] [Özgür Kocaeli] Attempt 1 failed for https://www.ozgurkocaeli.com.tr/kocaeli-guncel-haberleri: HTTP Error 404: 
+14:15:36 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27725247/talus-ankaradan-memnun-dondu
+14:15:36 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/gebzede-30-milyon-liralik-yatirimla-tamamlanan-sultanorhan-anaokulu-acildi/1935
+14:15:36 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27720910/chpli-kanko-saglikta-kuresel-lobi-iddialarini-meclise-tasidi
+14:15:37 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27720914/mustafa-destici-kocaeliye-geliyor
+14:15:37 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27736986/kartepede-uyusturucu-tacirine-darbe-4-yillik-firari-kiskivrak-yakalandi
+14:15:37 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27718586/baskan-dokuzlar-ercandan-saat-5e-kadar-cevap-bekliyor
+14:15:37 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/basiskele-kart-uygulamasi-4-bine-yakin-kullaniciya-ulasti/193571.html
+14:15:37 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27714439/talus-12-ilcede-gonul-kopruleri-kurmaya-devam-ediyoruz
+14:15:37 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27734394/kasten-oldurme-sucundan-aranan-hukumlu-gebzede-yakalandi
+14:15:37 [ERROR] [Özgür Kocaeli] Attempt 2 failed for https://www.ozgurkocaeli.com.tr/kocaeli-guncel-haberleri: HTTP Error 404: 
+14:15:37 [INFO] [Özgür Kocaeli] Blocked or 403, trying Google Cache: https://www.ozgurkocaeli.com.tr/kocaeli-guncel-haberleri
+14:15:38 [INFO] [Özgür Kocaeli] Google Cache OK: https://www.ozgurkocaeli.com.tr/kocaeli-guncel-haberleri
+14:15:38 [INFO] [Özgür Kocaeli] Found 106 article links.
+14:15:38 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27714221/mhp-derincede-uluman-donemi-basliyor
+14:15:38 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27745207/yerli-asi-uretimleri-basladi
+14:15:38 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27714153/chpli-sari-mertturk-ve-bayramdan-baskan-kocamana-taziye-ziyareti
+14:15:38 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27714121/arikan-kocaeliden-iktidara-cagri-yapti-gelin-operasyon-yapalim
+14:15:38 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27732886/kocaelide-119-okul-cevresi-didik-didik-edildi-yuzlerce-gbt-onlarca-ceza
+14:15:38 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27714022/dokuzlardan-hurriyete-elestiri-belsa-plaza-hic-bu-kadar-ayaga-dusmemisti
+14:15:38 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27745191/seka-devlet-yikilip-yeniden-yapilacak
+14:15:38 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/spor/korfezli-3-genc-karateci-balkan-sampiyonasi-icin-milli-takima-secildi/193570.html
+14:15:38 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27694013/tipioglu-tbmmde-konustu-savunma-sistemleri-devlet-aklinin-ve-guvenlik-stratejis
+14:15:38 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27693996/baskan-buyukakin-da-ankarada
+14:15:38 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27732772/basiskelede-uyusturucu-tacirine-gecit-yok-6-yilla-aranan-firari-yakaland
+14:15:39 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27745128/banka-ile-anlasma-tamam-kocaelispor-kredi-karti-geliyor
+14:15:39 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27691476/mhp-kocaeliden-rektor-canturke-ziyaret
+14:15:39 [INFO] [Bizim Yaka] 200 OK: https://www.bizimyaka.com/haber/27691466/kazandan-izmit-belediyesine-tepki-neden-aciklama-yapilmiyor
+14:15:39 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/-izmitte-edebiyat-kahramanlari-sokaklara-indi/193565.html
+14:15:39 [INFO] [Bizim Yaka] Scraped 40 articles.
+14:15:39 [INFO] [Done] Bizim Yaka: 40 haber bulundu.
+14:15:39 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27744961/bahri-yavuzun-aci-gunu
+14:15:39 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27732270/kocaelide-kaskli-dehset-tirin-altina-saklanan-agabey-kardesini-katletti
+14:15:39 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/gulbasak-paksoy/212.html
+14:15:40 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27744907/baba-ve-oglunu-olduren-yasli-adam-keske-dolandirilmasaydim-kanser-hastasi
+14:15:40 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27731897/gebzede-ela-tabakoglu-dosyasinda-iddianame-tamamlandi-bilirkisi-raporund
+14:15:40 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/gulbasak-paksoy/bu-hayatta-birileri-hep-dagitir/193315.html
+14:15:40 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27744730/buyukgoz-9-maden-ruhsatini-iptal-ettirdim-tehditlerle-yasadim
+14:15:40 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27731856/daricada-arac-satisi-iddiasinda-kriz-magdurlar-adliyeye-gitti-firmadan-y
+14:15:41 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/ismail-erenkaya/189.html
+14:15:41 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27744592/once-babasini-31-yil-sonra-kardesini-oldurdu-yakalanmasa-annesini-de-oldu
+14:15:41 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27731790/afad-duyurdu-kocaelide-deprem-meydana-geldi
+14:15:41 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/ismail-erenkaya/bu-ruh-hastalarini-iyi-taniyalim/193538.html
+14:15:41 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27744511/buyukgoz-2-yilini-degerlendirdi
+14:15:42 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27744194/gida-tarim-ve-hayvancilik-sorunlari-masaya-yatirildi
+14:15:42 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27731621/istanbulda-hissedilen-deprem
+14:15:42 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/fzt-beyza-erenkaya-korkmaz/186.html
+14:15:42 [INFO] [Saved] Cinayetin altından 31 yıllık aile trajedisi çıktı! | Gebze | Hırsızlık
+14:15:42 [INFO] [Saved] Kocaeli dahil 13 İlde “Change” operasyonu! | İzmit | Hırsızlık
+14:15:42 [INFO] [Saved] Çifte cinayet işleyen yaşlı adam ilk kez hakim karşısında! | Gölcük | Genel
+14:15:42 [INFO] [Saved] Uyuşturucu satıcısı Başiskele'de yakalandı! | Kandıra | Genel
+14:15:42 [INFO] [Saved] İflas açıklayan otomotiv firmasının mağdurlarından suç duyur | Gebze | Genel
+14:15:42 [INFO] [Saved] Öz abisi tarafından öldürülmüş! | Darıca | Genel
+14:15:42 [INFO] [Saved] Kocaeli’de korsan servislere geçit yok | Gebze | Genel
+14:15:42 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27744175/sadettin-hulagu-aciklamisti-buyukgoz-gebze-sehir-hastanesinin-yapilacagi-
+14:15:42 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/fzt-beyza-erenkaya-korkmaz/kas-aktivasyonu-postural-kontrol-ve-olcum-biliminin-yukseli
+14:15:42 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27731577/70-saatlik-kamera-incelemesi-sonucunda-7-dag-evini-soyan-supheliler-yaka
+14:15:43 [INFO] [Saved] Sokakta hareketsiz yatan şahsın hayatını kaybettiği belirlen | Darıca | Genel
+14:15:43 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27744168/hakim-gebzede-bilirkisiden-ek-rapor-istemis-buyukgoz-uzlasmayan-kalmadi
+14:15:43 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/murat-tolunay/190.html
+14:15:43 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27744969/korfezde-ilimtepe-yolu-ikinci-etap-icin-ihale-vakti-sener-sogut-detaylar
+14:15:43 [INFO] [Saved] Kanlı gecenin operasyon görüntüleri ortaya çıktı! | İzmit | Genel
+14:15:43 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27744019/kaymakam-senel-tema-uyesi-oldu
+14:15:43 [INFO] [Saved] Korkunç cinayetin altından 31 yıllık aile trajedisi çıktı! B | Gebze | Hırsızlık
+14:15:43 [INFO] [Saved] 7 yıl hapis cezası bulunan firari kıskıvrak yakalandı | İzmit | Genel
+14:15:43 [INFO] [Saved] Üst aramasıyla başladı, evinden suç unsurları çıktı | İzmit | Genel
+14:15:43 [INFO] [Saved] Verdiği paranın 2 katını alacağı vaadiyle 3 milyon TL doland | İzmit | Genel
+14:15:43 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27744931/kocaelinin-dogu-yakasina-275-milyarlik-ulasim-ve-ustyapi-yatirimi
+14:15:43 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/murat-tolunay/ya-simdi-ne-olacak/193404.html
+14:15:44 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27743984/mhp-izmitten-kadikoy-mesaisi
+14:15:44 [INFO] [Saved] Baba ve oğlu sokak ortasında öldüren yaşlı adam: "Keşke dola | Gölcük | Genel
+14:15:44 [INFO] [Saved] İnternetten silah satışına Kocaeli dahil 16 ilde 35 gözaltı | İzmit | Genel
+14:15:44 [INFO] [Saved] Umre hayali kabusa döndü: 200 kişi dolandırıldığını iddia ed | İzmit | Genel
+14:15:44 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27743973/koctan-izmit-belediyesine-gonderme-sonu-cop-kamyonlari-gibi-olmasin
+14:15:44 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27744876/bakan-kacir-dilovasinda-konustu-uretim-kabiliyeti-en-onemli-kuvvet-carpa
+14:15:44 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/huseyin-gulister/196.html
+14:15:44 [INFO] [Saved] TEM'de otomobil devrilen tır dorsesinin altında kaldı: Karı- | İzmit | Trafik Kazası
+14:15:44 [INFO] [Saved] 200 bin liralık kablo çalan hırsızların bindiği motosiklet d | İzmit | Hırsızlık
+14:15:44 [INFO] [Saved] Elektrik akımına kapılan yaşlı adam hayatını kaybetti | İzmit | Genel
+14:15:45 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27743919/sigaraya-buyuk-zam
+14:15:45 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27744146/hatayi-yikan-senaryo-kocaeli-kapisinda-prof-dr-avci-uyardi-sahil-kesimle
+14:15:45 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/huseyin-gulister/hedefe-giderken-sabir/191377.html
+14:15:46 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27744016/sener-sogut-mujdeledi-yeni-durak-eklendi-korfez-metrosu-belediyenin-tam-
+14:15:46 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/adem-ari/199.html
+14:15:46 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27742171/yasli-cift-korkunc-kazada-can-verdi
+14:15:46 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27743001/kocaelide-tetikci-operasyonu
+14:15:46 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27742326/kisi-basi-1500-dolar-odeyen-kocaelili-umrecilerin-hayali-kabusa-dondu-fir
+14:15:46 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27738403/denizden-yolcu-tasima-amacli-yolcu-motoru-kiralama-hizmeti-alinacaktir
+14:15:46 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27742386/komsusuyla-yatak-odasinda-karisina-basildi-kendini-boyle-savundu
+14:15:46 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27743935/cengiz-topelde-sefer-sessizligi-kocaelinin-adini-umre-ucuslari-yasatiyor
+14:15:46 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27742630/mart-ayi-enflasyon-rakamlari-belli-oldu
+14:15:46 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/adem-ari/nevruz-ve-sari-kirmizi-yesil/193424.html
+14:15:46 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27739721/otobanda-feci-kaza-2-olu-kilometrelerce-kuyruk
+14:15:47 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27743846/izmit-ve-buyukcekmece-belediyelerinden-ortak-festival-mesaisi
+14:15:47 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27741513/altin-icin-beklentiler-degisti-islam-memisten-yok-artik-dedirten-tahmin
+14:15:47 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/kudret-sonmez/201.html
+14:15:47 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27743064/istasyon-mahallesinde-su-kesintisi-isu-saat-verdi-sular-ne-zaman-gelecek
+14:15:47 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27743301/buyukgoz-gebze-darica-metrosu-icin-tarih-verdi-bu-sene-acilmis-olacak
+14:15:48 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/kudret-sonmez/safiport/188232.html
+14:15:48 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27743227/kuzey-marmara-otoyolu-gebze-cikisi-projesi-onaylandi
+14:15:48 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27743025/golcuk-piyalepasada-su-kesintisi-isu-saat-verdi-sular-ne-zaman-gelecek
+14:15:48 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27738581/3-yil-once-esini-kaybetmisti-yalniz-yasadigi-evde-canina-kiydi
+14:15:48 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/sinem-siklon/203.html
+14:15:48 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27743149/kocaeliden-3-kitaya-milyonlarca-liralik-destek
+14:15:48 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739016/izmit-seymen-bloklarinda-park-tepkisi
+14:15:48 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27742256/enag-mart-enflasyonunu-acikladi
+14:15:48 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27742671/son-dakika-nisan-ayi-kira-artis-orani-belli-oldu
+14:15:49 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740693/derince-liman-yolu-bir-kez-daha-durdu
+14:15:49 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/sinem-siklon/sessizlik-de-bir-iletisimdir/193531.html
+14:15:49 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27738960/engel-tanimayan-yuruyus-izmit-merkez-bankasindan-kent-meydanina-dev-kort
+14:15:49 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27737912/iste-otvsiz-alinacak-otomobiller-otvsiz-arac-duzenlemesi-mecliste-onaylan
+14:15:49 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/mehmet-turel/204.html
+14:15:49 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27738887/izmit-belediyesi-dugmecilerde-ureticinin-sesini-yerinde-dinledi
+14:15:49 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740683/kartepe-istasyon-mahallesindeki-cukurlar-araclara-zarar-veriyor
+14:15:50 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27738861/gebzede-coken-bina-faciasinda-yeni-asama-bilirkisi-heyeti-enkaz-alaninda
+14:15:50 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/mehmet-turel/hos-geldin-2025/191943.html
+14:15:50 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27738659/kocaelinin-gururu-merih-demiraldan-anlamli-hediye-ay-yildizli-forma-abis
+14:15:50 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740679/servis-araci-yolu-daraltiyor-vatandas-sikayet-ediyor
+14:15:50 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27738399/kocaeli-itfaiyesinden-elektrikli-arac-alarmi-oyak-liman-personeli-sahaya
+14:15:50 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27742608/izmitte-kadinlar-icin-yeni-uretim-merkezi-ana-kafe-gastronomi-ve-worksho
+14:15:50 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740665/kocaeli-barosu-avukatlari-hukuk-balosunda-bulusacak
+14:15:50 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/vasfi-asci/205.html
+14:15:51 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740655/belediye-onundeki-elektrikli-sarj-istasyonu-herkese-acik-olsun
+14:15:51 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740929/sanayi-ve-teknoloji-bakani-mehmet-fatih-kacir-yarin-kocaeliye-geliyor
+14:15:51 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740844/kis-geri-adim-atiyor-bahar-geri-donuyor-sicakliklar-20-dereceyi-gorecek
+14:15:51 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/vasfi-asci/tataminin-krali-huseyin-bas-karate-spor-kulubu-oldu/191818.html
+14:15:51 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27733902/kocaelide-o-fabrikadaki-iscilere-119-bin-tl-maas-130-bin-tl-promosyon
+14:15:51 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740509/yuvacik-barajindan-sapancaya-can-suyu-amfibik-araclar-devrede
+14:15:52 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740364/kocaeli-valiliginde-gonul-koprusu-vali-ilhami-aktas-hem-vatandasi-hem-se
+14:15:52 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27722760/milyonlarca-tl-ile-ortadan-kayboldular
+14:15:52 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740250/sedas-ile-tes-is-arasinda-9-donem-toplu-sozlesme-gorusmeleri-basladi
+14:15:52 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/vatandas-konusuyor/206.html
+14:15:52 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27731878/bar-katliamini-kocaeli-polisi-boyle-aydinlatti
+14:15:52 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27740205/kirmizi-karabasan-kocaeliye-gelecek-mi-meteoroloji-gun-gun-acikladi
+14:15:53 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739962/kocaelililer-mujde-artik-sizi-rahatsiz-edemeyecekler
+14:15:53 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/vatandas-konusuyor/ama-gercekte-ne-oluyor/184863.html
+14:15:53 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734794/izmitin-taninan-ismi-amansiz-hastaliga-yenik-dustu
+14:15:53 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739869/korfez-belediyesi-camtepe-mahallesi-agac-devrildi-acil-mudahale-cagrisi
+14:15:53 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739837/yasar-kibardan-izmit-barlar-sokagi-icin-emniyete-cagri-bu-insanlarin-tem
+14:15:53 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27729985/izmitte-gorev-yapan-ogretmenden-kahreden-haber
+14:15:53 [INFO] [Çağdaş Kocaeli] 200 OK: https://www.cagdaskocaeli.com.tr/haber/27739723/gebzede-otizm-farkindaligi-bu-evlatlar-hepimize-emanet
+14:15:53 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/-mujde-aklanoglu/208.html
+14:15:53 [INFO] [Çağdaş Kocaeli] Scraped 43 articles.
+14:15:53 [INFO] [Done] Çağdaş Kocaeli: 43 haber bulundu.
+14:15:53 [INFO] [Saved] Darıca'da kardeşini pusu kurarak öldürmüştü, yıllar önce bab | Gebze | Hırsızlık
+14:15:53 [INFO] [Saved] İzmit’te uyuşturucu ve sahte para operasyonu | İzmit | Genel
+14:15:53 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27727855/genc-ogretmen-anlattigi-konuyla-degil-kiyafetiyle-gundem-oldu
+14:15:54 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27741183/umre-hayali-kabusa-dondu-200-kisi-solugu-karakolda-aldi
+14:15:54 [INFO] [Saved] Çayırova’da 3 milyon liralık dolandırıcılık iddiası: “Parayı | Çayırova | Genel
+14:15:54 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/-mujde-aklanoglu/kocaeli-film-elestirisi-2/189872.html
+14:15:54 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27733064/kocaelide-velinin-sikayetiyle-okul-muduru-ve-ogretmen-gorevden-uzaklastir
+14:15:54 [INFO] [Saved] Karamürsel’de baba-oğul cinayeti davasında sanık ilk kez hak | Gölcük | Genel
+14:15:54 [INFO] [Saved] Kocaeli dahil 16 ilde silah ve dijital suç operasyonu: 35 gö | İzmit | Genel
+14:15:54 [INFO] [Saved] İzmitli öğretmen genç yaşta yakalandığı hastalığa yenik düşt | İzmit | Genel
+14:15:54 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/beyza-akgunes/210.html
+14:15:54 [INFO] [Saved] Polisten kaçan alkollü sürücüye 360 bin lira ceza! | İzmit | Trafik Kazası
+14:15:54 [INFO] [Saved] Trafikte yürekleri ağza getirdi: D-100'de kilometrelerce ter | İzmit | Genel
+14:15:55 [INFO] [Saved] İzmit'te 3 kişinin öldüğü kanlı saldırıda 6 şahıs tutuklandı | İzmit | Genel
+14:15:55 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27723490/karisi-4-aylik-hamileydi-24-yasindaki-kuryenin-aci-olumu
+14:15:55 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/beyza-akgunes/atesten-gomlegi-giyerken/192140.html
+14:15:55 [INFO] [Saved] Kartepe’de uyuşturucu tacirine darbe: 4 yıllık firari kıskıv | Kartepe | Genel
+14:15:55 [INFO] [Saved] Kasten öldürme suçundan aranan hükümlü Gebze’de yakalandı | Gebze | Genel
+14:15:55 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27731997/milyonlarca-tl-ile-ortadan-kaybolmustu-attigi-mesaj-yok-artik-dedirtti
+14:15:55 [INFO] [Saved] Kocaeli'de 119 okul çevresi didik didik edildi: Yüzlerce GBT | İzmit | Genel
+14:15:55 [INFO] [Saved] Başiskele’de uyuşturucu tacirine geçit yok: 6 yılla aranan f | Kandıra | Genel
+14:15:55 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/ezgi-paksoy-gunay/211.html
+14:15:56 [INFO] [Saved] Kocaeli'de 'Kasklı' dehşet: Tırın altına saklanan ağabey kar | Darıca | Genel
+14:15:56 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27730656/kocaelide-korkunc-cinayet-cesedi-bulundu
+14:15:56 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/ezgi-paksoy-gunay/gormezden-geldiklerin-artik-gorunur-oluyor/193466.html
+14:15:56 [INFO] [Saved] Gebze'de Ela Tabakoğlu dosyasında iddianame tamamlandı: Bili | Gebze | Genel
+14:15:56 [INFO] [Saved] Darıca'da araç satışı iddiasında kriz: Mağdurlar adliyeye gi | Gebze | Genel
+14:15:56 [INFO] [Saved] AFAD duyurdu: Kocaeli'de deprem meydana geldi! | Gebze | Genel
+14:15:56 [INFO] [Saved] İstanbul'da hissedilen deprem | Gebze | Genel
+14:15:56 [INFO] [Saved] 70 saatlik kamera incelemesi sonucunda 7 dağ evini soyan şüp | İzmit | Hırsızlık
+14:15:56 [INFO] [Saved] Körfez'de İlimtepe yolu ikinci etap için ihale vakti: Şener  | Körfez | Genel
+14:15:57 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/aysel-tok/213.html
+14:15:57 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27735982/barlar-sokagi-tasinmali-mi-kibar-tasiyalim-diyorlarsa-gelsinler-bizimle-k
+14:15:57 [INFO] [Saved] Kocaeli’nin doğu yakasına 2,75 milyarlık ulaşım ve üstyapı y | İzmit | Genel
+14:15:57 [INFO] [Saved] Bakan Kacır Dilovası’nda konuştu: “Üretim kabiliyeti en önem | Dilovası | Kültürel Etkinlikler
+14:15:57 [INFO] [Saved] Hatay'ı yıkan senaryo Kocaeli kapısında! Prof. Dr. Avcı uyar | İzmit | Genel
+14:15:57 [INFO] [Saved] Şener Söğüt müjdeledi: Yeni durak eklendi, Körfez Metrosu be | Kartepe | Genel
+14:15:57 [INFO] [Saved] Cengiz Topel’de sefer sessizliği, Kocaeli’nin adını umre uçu | İzmit | Genel
+14:15:57 [INFO] [Saved] İzmit ve Büyükçekmece Belediyelerinden ortak festival mesais | İzmit | Kültürel Etkinlikler
+14:15:57 [INFO] [Saved] İstasyon Mahallesi'nde su kesintisi! İSU saat verdi: Sular n | Gebze | Genel
+14:15:57 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/yazar/aysel-tok/doga-bile-boslugu-kabul-etmez/193481.html
+14:15:57 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27724207/goodyear-calisanlari-40-bin-liralik-promosyonu-dusuk-buldu-eylem-yaptilar
+14:15:57 [INFO] [Saved] Gölcük Piyalepaşa'da su kesintisi! İSU saat verdi: Sular ne  | Gölcük | Genel
+14:15:57 [INFO] [Saved] Engel tanımayan yürüyüş! İzmit Merkez Bankası’ndan Kent Meyd | İzmit | Genel
+14:15:57 [INFO] [Saved] İzmit’te kadınlar için yeni üretim merkezi: Ana Kafe Gastron | İzmit | Kültürel Etkinlikler
+14:15:58 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27730033/sabiha-gokcen-hattinda-kriz-yanlis-guzergah-kazaya-donustu-yolcular-yolda
+14:15:58 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27735924/barlar-sokaginda-guvenlik-tartismasi-yasar-kibar-sorun-iceride-degil-soka
+14:15:59 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27736393/cenesuyuna-bir-zam-daha-geldi
+14:16:00 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27723127/kesob-adayligi-konusulan-demir-net-konustu-benim-adayim-kazandi
+14:16:00 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27727775/bu-arsaya-sanayi-tesisi-yerine-baska-bir-sey-yapilsin
+14:16:00 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27737770/hurriyet-arac-tanitiminda-konustu-80-olan-arac-sayimizi-345e-cikardik
+14:16:01 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740663/denizcilik-sektoru-ve-ogrenciler-10-kariyer-gunlerinde-bulustu
+14:16:02 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740317/korfezli-karateciler-turkiye-ikincisi-oldu
+14:16:02 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740293/korfez-gb-u15-takimi-ust-uste-dorduncu-kez-sampiyon-oldu
+14:16:02 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27739958/u19-gelisim-ligi-derbide-golcukspor-guldu
+14:16:03 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27738831/kocaelili-ahmet-kerem-yildirim-bilardo-da-turkiye-sampiyonu-oldu
+14:16:03 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27736435/u15-gelisim-ligi-play-off-2turda-yalovada-turladik-istanbulda-elendik
+14:16:04 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27736419/2kumede-ilk-sampiyon-belli-oldu
+14:16:04 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27735715/baskan-buyukakin-o-hakemi-tebrik-etti
+14:16:04 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734828/hakem-akcadan-alkislanacak-davranis
+14:16:05 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27742094/derbent-esnafspor-sampiyonluga-kosuyor
+14:16:05 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740938/u15-gelisim-ligi-play-off-2turda-yalovada-turladik-istanbulda-elendik
+14:16:05 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734811/alikahyaspor-yemekte-bulustu
+14:16:06 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734776/kagitspor-izmirde-3-1-kaybetti
+14:16:07 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734406/u15-futbol-ligi-5-grup-sampiyonu-korfez-gb-oldu
+14:16:08 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734341/yeniden-refah-partisinden-murat-aydina-ziyaret
+14:16:08 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27741214/bakan-kacir-yarin-kocaelide
+14:16:09 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27741069/bedelli-askerlik-ucreti-417-bin-liraya-cikarildi
+14:16:09 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27741485/can-holding-yonetim-kurulu-baskani-kemal-can-tahliye-edildi
+14:16:10 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27741388/afad-duyurdu-42-buyuklugunde-deprem
+14:16:10 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740975/buyuksehir-sekaparktaki-cocuk-oyun-alanlarini-yaza-hazirliyor-cocuklar-se
+14:16:10 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/saglik-ve-ekonomide-guclu-sistem-h
+14:16:11 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740706/kotkonun-yeni-merkezi-2-yil-icinde-bitirilecek
+14:16:11 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740902/cem-ozer-dualarla-anildi
+14:16:11 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740776/zincir-marketle-ilgili-vahim-iddia-mudurler-alt-kademedeki-calisanlardan-
+14:16:11 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740595/kocaeliden-isimler-tugik-yonetimine-girdi
+14:16:12 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740554/cep-telefonu-tarifelerine-zam-iste-yeni-ucretler
+14:16:12 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27741263/uyusturucu-sorusturmasinda-didem-soydan-ve-6-kisinin-testi-pozitif-cikti
+14:16:12 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27741547/kayip-yasli-kadin-icin-arama-calismasi-baslatildi
+14:16:12 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740714/cogu-surucu-bilmiyor-fotograftaki-sucun-bedeli-720-bin-tl
+14:16:13 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740382/200-bin-tllik-kablo-calan-hirsizlar-yakalandi
+14:16:13 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27741226/pes-dedirten-olay-goruntuyu-izleyen-baba-savciliga-kostu
+14:16:13 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27739673/fuhusa-tesvik-ve-araciliktan-15-yil-hapis-cezasiyla-araniyordu-yakalandi
+14:16:13 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27739039/cesedi-ormana-gomup-mahkemede-birbirini-sucladilar
+14:16:14 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27736122/izmitte-dev-kutuk-arabanin-camina-saplandi
+14:16:14 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27733015/o-kavsagin-ismi-olum-kavsagi-oldu-vatandastan-talep-var
+14:16:15 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27735186/hastanede-sedyeden-dustugu-iddia-edilen-genc-yasam-mucadelesini-kaybetti
+14:16:15 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27735097/aydinda-trafik-kazasi-1-yarali
+14:16:15 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27740968/bu-cocuklara-ne-oldu-liseli-kizi-acimasizca-dovduler
+14:16:16 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27732173/yaris-yapan-otomobiller-yaya-gecidindeki-kiz-cocuklarina-carpip-kacti
+14:16:16 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27731926/6-yasindaki-elanin-oldugu-kazada-surucu-tali-kucuk-kiz-asli-kusurlu-bulun
+14:16:17 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27731763/oz-kardesini-pusu-kurup-oldurdu
+14:16:17 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27731401/kestikleri-at-etlerini-kilosu-400-liradan-satiyorlardi-tutuklandilar
+14:16:18 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27735060/traktorun-saftina-dusen-5-yasindaki-cocuk-hayatini-kaybetti
+14:16:18 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734986/fenomen-cihan-sensozlu-hakkinda-tahliye-karari
+14:16:18 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734875/golcukte-kaybolan-iki-ogrenci-bulundu
+14:16:18 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734820/degirmenderede-iki-kiz-cocugu-kayip
+14:16:18 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734361/kizim-tiktoka-dustu-assolist-olma-hayaliyle-yuvasini-yikti-diyen-annenin-
+14:16:19 [INFO] [Özgür Kocaeli] 200 OK: https://www.ozgurkocaeli.com.tr/haber/27734246/ogretmene-okulda-darp-iddiasi-ambulansla-hastaneye-kaldirildi
+14:16:19 [INFO] [Özgür Kocaeli] Scraped 45 articles.
+14:16:19 [INFO] [Done] Özgür Kocaeli: 45 haber bulundu.
+14:16:19 [INFO] [Saved] Yerli aşı üretimleri başladı! | İzmit | Genel
+14:16:19 [INFO] [Saved] Seka Devlet yıkılıp yeniden yapılacak! | İzmit | Genel
+14:16:19 [INFO] [Saved] Banka ile anlaşma tamam! Kocaelispor kredi kartı geliyor | İzmit | Genel
+14:16:19 [INFO] [Saved] Bahri Yavuz’un acı günü | İzmit | Genel
+14:16:19 [INFO] [Saved] Baba ve oğlunu öldüren yaşlı adam: “Keşke dolandırılmasaydım | Gölcük | Genel
+14:16:19 [INFO] [Saved] Büyükgöz: “9 maden ruhsatını iptal ettirdim; tehditlerle yaş | Gebze | Genel
+14:16:19 [INFO] [Saved] Önce babasını, 31 yıl sonra kardeşini öldürdü! Yakalanmasa a | Gebze | Hırsızlık
+14:16:19 [INFO] [Saved] Büyükgöz 2 yılını değerlendirdi | Gebze | Elektrik Kesintisi
+14:16:19 [INFO] [Saved] Gıda, tarım ve hayvancılık sorunları masaya yatırıldı | Gebze | Genel
+14:16:19 [INFO] [Saved] Sadettin Hülagü açıklamıştı: Büyükgöz, Gebze Şehir Hastanesi | Gebze | Genel
+14:16:20 [INFO] [Saved] Hakim Gebze’de bilirkişiden ek rapor istemiş! Büyükgöz: Uzla | Gebze | Genel
+14:16:20 [INFO] [Saved] Kaymakam Şenel TEMA üyesi oldu | Körfez | Genel
+14:16:20 [INFO] [Saved] MHP İzmit’ten Kadıköy mesaisi | İzmit | Genel
+14:16:20 [INFO] [Saved] Koç’tan İzmit Belediyesi’ne gönderme: “Sonu çöp kamyonları g | İzmit | Genel
+14:16:20 [INFO] [Saved] Sigaraya büyük zam! | İzmit | Genel
+14:16:20 [INFO] [Saved] Otobanda feci kaza! 2 ölü, kilometrelerce kuyruk | İzmit | Trafik Kazası
+14:16:20 [INFO] [Saved] Altın için beklentiler değişti: İslam Memiş'ten "Yok artık"  | İzmit | Genel
+14:16:21 [INFO] [Saved] 3 yıl önce eşini kaybetmişti: Yalnız yaşadığı evde canına kı | İzmit | Genel
+14:16:21 [INFO] [Saved] Derince Liman Yolu bir kez daha durdu! | Derince | Genel
+14:16:21 [INFO] [Saved] İşte ÖTV'siz alınacak otomobiller: ÖTV'siz araç düzenlemesi  | İzmit | Genel
+14:16:21 [INFO] [Saved] “Kartepe İstasyon Mahallesindeki çukurlar araçlara zarar ver | Kartepe | Genel
+14:16:21 [INFO] [Saved] Servis aracı yolu daraltıyor, vatandaş şikayet ediyor | Darıca | Genel
+14:16:21 [INFO] [Saved] Kocaeli Barosu Avukatları Hukuk Balosu’nda buluşacak | İzmit | Genel
+14:16:21 [INFO] [Saved] “Belediye önündeki elektrikli şarj istasyonu herkese açık ol | Kartepe | Genel
+14:16:21 [INFO] [Saved] Kocaeli’de o fabrikadaki işçilere 119 bin TL maaş, 130 bin T | İzmit | Genel
+14:16:22 [INFO] [Saved] Bar katliamını Kocaeli polisi böyle aydınlattı | İzmit | Genel
+14:16:22 [INFO] [Saved] İzmit’in tanınan ismi amansız hastalığa yenik düştü! | İzmit | Genel
+14:16:22 [INFO] [Saved] İzmit'te görev yapan öğretmenden kahreden haber! | İzmit | Genel
+14:16:22 [INFO] [Saved] Umre hayali kabusa döndü: 200 kişi soluğu karakolda aldı... | İzmit | Genel
+14:16:22 [INFO] [Saved] Kocaeli’de velinin şikayetiyle okul müdürü ve öğretmen görev | Kandıra | Genel
+14:16:22 [INFO] [Saved] Milyonlarca TL ile ortadan kaybolmuştu, attığı mesaj yok art | Gebze | Genel
+14:16:22 [INFO] [Saved] Kocaeli’de korkunç cinayet! Cesedi bulundu | Darıca | Genel
+14:16:22 [INFO] [Saved] Barlar Sokağı taşınmalı mı? Kibar: Taşıyalım diyorlarsa gels | İzmit | Genel
+14:16:22 [INFO] [Saved] Sabiha Gökçen hattında kriz: Yanlış güzergâh kazaya dönüştü, | İzmit | Trafik Kazası
+14:16:22 [INFO] [Saved] Barlar Sokağı’nda güvenlik tartışması: Yaşar Kibar: “Sorun i | İzmit | Genel
+14:16:22 [INFO] [Saved] Çenesuyu’na bir zam daha geldi | Derince | Genel
+14:16:22 [INFO] [Saved] Hürriyet araç tanıtımında konuştu: “80 olan araç sayımızı 34 | İzmit | Genel
+14:16:22 [INFO] [Saved] Hakem Akça’dan alkışlanacak davranış | Körfez | Genel
+14:16:22 [INFO] [Saved] Alikahyaspor yemekte buluştu | Kandıra | Genel
+14:16:22 [INFO] [Saved] Kağıtspor İzmir’de 3-1 kaybetti | İzmit | Genel
+14:16:22 [INFO] [Saved] U15 Futbol Ligi 5. Grup şampiyonu Körfez GB oldu | Körfez | Genel
+14:16:22 [INFO] [Saved] Yeniden Refah Partisi’nden Murat Aydın’a ziyaret | İzmit | Genel
+14:16:22 [INFO] [Saved] Aydın'da trafik kazası: 1 yaralı | İzmit | Trafik Kazası
+14:16:22 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Sağlık ve ekonomide güçlü sistem hedefi bu görüşmede ele alındı https://www.yeniko
+14:16:23 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/saglik-ve-ekonomide-guclu-sistem-hedefi-bu-gorusmede-ele-alindi/193588.html: HTTP Error 404: 
+14:16:23 [INFO] [Saved] Yarış yapan otomobiller yaya geçidindeki kız çocuklarına çar | Gebze | Trafik Kazası
+14:16:23 [INFO] [Saved] 6 yaşındaki Ela'nın öldüğü kazada sürücü 'tali', küçük kız ' | Gebze | Genel
+14:16:24 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/saglik-ve-ekonomide-guclu-sistem-hedefi-bu-gorusmede-ele-alindi/193588.html: HTTP Error 404: 
+14:16:24 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/kartepede-yesil-alanlarda-bakim-ve
+14:16:25 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Kartepe'de yeşil alanlarda bakım ve temizlik çalışmaları sürüyor https://www.yenik
+14:16:25 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/kartepede-yesil-alanlarda-bakim-ve-temizlik-calismalari-suruyor/193587.html: HTTP Error 404: 
+14:16:26 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/kartepede-yesil-alanlarda-bakim-ve-temizlik-calismalari-suruyor/193587.html: HTTP Error 404: 
+14:16:26 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/hastanede-deprem-farkindaligi-etki
+14:16:27 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Hastanede deprem farkındalığı etkinliği https://www.yenikocaeli.com/haber/guncel/h
+14:16:27 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/hastanede-deprem-farkindaligi-etkinligi/193586.html: HTTP Error 404: 
+14:16:29 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/hastanede-deprem-farkindaligi-etkinligi/193586.html: HTTP Error 404: 
+14:16:29 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/cesedi-ormana-gomup-mahkemede-birbirini-suclayan-kardesler-cezadan-kurtul
+14:16:30 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/polis-adliye/cesedi-ormana-gomup-mahkemed
+14:16:30 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Cesedi ormana gömüp mahkemede birbirini suçlayan kardeşler cezadan kurtulamadı htt
+14:16:31 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/cesedi-ormana-gomup-mahkemede-birbirini-suclayan-kardesler-cezadan-kurtulamadi/193585.html: HTTP Error 404: 
+14:16:32 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/cesedi-ormana-gomup-mahkemede-birbirini-suclayan-kardesler-cezadan-kurtulamadi/193585.html: HTTP Error 404: 
+14:16:32 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/tramvay-tutkunu-6-yasindaki-muhammet-enesin-hayali-gercege-donustu/193584.html
+14:16:33 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/tramvay-tutkunu-6-yasindaki-muhamm
+14:16:34 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Tramvay tutkunu 6 yaşındaki Muhammet Enes'in hayali gerçeğe dönüştü https://www.ye
+14:16:34 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/tramvay-tutkunu-6-yasindaki-muhammet-enesin-hayali-gercege-donustu/193584.html: HTTP Error 404: 
+14:16:35 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/tramvay-tutkunu-6-yasindaki-muhammet-enesin-hayali-gercege-donustu/193584.html: HTTP Error 404: 
+14:16:36 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/kamyondan-dusen-tomruk-seyir-halindeki-otomobile-saplandi/193583.html
+14:16:36 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/polis-adliye/kamyondan-dusen-tomruk-seyir
+14:16:37 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Kamyondan düşen tomruk seyir halindeki otomobile saplandı https://www.yenikocaeli.
+14:16:37 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/kamyondan-dusen-tomruk-seyir-halindeki-otomobile-saplandi/193583.html: HTTP Error 404: 
+14:16:38 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/kamyondan-dusen-tomruk-seyir-halindeki-otomobile-saplandi/193583.html: HTTP Error 404: 
+14:16:38 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/spor/sakatlanan-futbolcuyu-macin-hakemi-k
+14:16:39 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Sakatlanan futbolcuyu maçın hakemi kucağında taşıdı https://www.yenikocaeli.com/ha
+14:16:39 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/spor/sakatlanan-futbolcuyu-macin-hakemi-kucaginda-tasidi/193582.html: HTTP Error 404: 
+14:16:40 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/spor/sakatlanan-futbolcuyu-macin-hakemi-kucaginda-tasidi/193582.html: HTTP Error 404: 
+14:16:41 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/biz-birlikte-turkiyeyiz-temali-ilce-sergileri-basliyor/193581.html
+14:16:41 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/biz-birlikte-turkiyeyiz-temali-ilc
+14:16:42 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=“Biz Birlikte Türkiye’yiz” temalı ilçe sergileri başlıyor https://www.yenikocaeli.
+14:16:42 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/biz-birlikte-turkiyeyiz-temali-ilce-sergileri-basliyor/193581.html: HTTP Error 404: 
+14:16:44 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/biz-birlikte-turkiyeyiz-temali-ilce-sergileri-basliyor/193581.html: HTTP Error 404: 
+14:16:44 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/ortak-akilla-daha-guclu-derince/19
+14:16:44 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=“Ortak Akılla Daha Güçlü Derince” https://www.yenikocaeli.com/haber/guncel/ortak-a
+14:16:45 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/ortak-akilla-daha-guclu-derince/193580.html: HTTP Error 404: 
+14:16:46 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/ortak-akilla-daha-guclu-derince/193580.html: HTTP Error 404: 
+14:16:46 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/manavlarin-kultur-hafizasi-bu-kitapta-toplandi/193578.html
+14:16:47 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/manavlarin-kultur-hafizasi-bu-kita
+14:16:48 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=“Manavların” kültür hafızası bu kitapta toplandı https://www.yenikocaeli.com/haber
+14:16:48 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/manavlarin-kultur-hafizasi-bu-kitapta-toplandi/193578.html: HTTP Error 404: 
+14:16:49 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/manavlarin-kultur-hafizasi-bu-kitapta-toplandi/193578.html: HTTP Error 404: 
+14:16:49 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/kadinlar-icin-yeni-bulusma-noktasi
+14:16:50 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Kadınlar için yeni buluşma noktası https://www.yenikocaeli.com/haber/guncel/kadinl
+14:16:50 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/kadinlar-icin-yeni-bulusma-noktasi/193577.html: HTTP Error 404: 
+14:16:52 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/kadinlar-icin-yeni-bulusma-noktasi/193577.html: HTTP Error 404: 
+14:16:52 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/kartepede-sahada-iletisim-toplumda
+14:16:52 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Kartepe’de Sahada İletişim, Toplumda Farkındalık Eğitimi https://www.yenikocaeli.c
+14:16:53 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/kartepede-sahada-iletisim-toplumda-farkindalik-egitimi/193576.html: HTTP Error 404: 
+14:16:54 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/kartepede-sahada-iletisim-toplumda-farkindalik-egitimi/193576.html: HTTP Error 404: 
+14:16:54 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/saglik/hekimsenden-mart-ayi-verilerine-iliskin-degerlendirme/193575.html
+14:16:55 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/saglik/hekimsenden-mart-ayi-verilerine-il
+14:16:56 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Hekimsen'den mart ayı verilerine ilişkin değerlendirme https://www.yenikocaeli.com
+14:16:56 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/saglik/hekimsenden-mart-ayi-verilerine-iliskin-degerlendirme/193575.html: HTTP Error 404: 
+14:16:57 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/saglik/hekimsenden-mart-ayi-verilerine-iliskin-degerlendirme/193575.html: HTTP Error 404: 
+14:16:58 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/izmit-korfezi-iki-renk-oldu-derenin-tasidigi-camur-denizin-rengini-degistirdi/1
+14:16:58 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/izmit-korfezi-iki-renk-oldu-dereni
+14:16:59 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=İzmit Körfezi iki renk oldu: Derenin taşıdığı çamur denizin rengini değiştirdi htt
+14:16:59 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/izmit-korfezi-iki-renk-oldu-derenin-tasidigi-camur-denizin-rengini-degistirdi/193574.html: HTTP Error 404: 
+14:17:01 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/izmit-korfezi-iki-renk-oldu-derenin-tasidigi-camur-denizin-rengini-degistirdi/193574.html: HTTP Error 404: 
+14:17:01 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/spor/euro-2016nin-mimari-selcuk-inandan-m
+14:17:01 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=EURO 2016'nın mimarı Selçuk İnan'dan milli takım yorumu https://www.yenikocaeli.co
+14:17:02 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/spor/euro-2016nin-mimari-selcuk-inandan-milli-takim-yorumu/193573.html: HTTP Error 404: 
+14:17:03 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/spor/euro-2016nin-mimari-selcuk-inandan-milli-takim-yorumu/193573.html: HTTP Error 404: 
+14:17:03 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/6-yasindaki-elanin-oldugu-servis-kazasinda-surucu-tali-kucuk-kiz-asli-kus
+14:17:04 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/izmit-belediyesi-orman-haftasina-ozel-2020-fidan-dagitti/193550.html
+14:17:04 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/spor/kagitsporun-oldugu-her-yerde-basari-var/193556.html
+14:17:05 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/spor/kocaelide-dunya-kupasi-coskusu/193562.html
+14:17:06 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/-kocaelinin-fazla-suyu-sapanca-golune-gonderiliyor/193561.html
+14:17:07 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/cemiyetten-sert-tepki/193553.html
+14:17:07 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/-eglence-mekanina-silahli-saldiri-2-olu-3-yarali/193485.html
+14:17:07 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/-kotu-koku-ihbari-ekipleri-alarma-gecirdi/193560.html
+14:17:08 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/guvenli-kocaeli-hedefiyle-sehrin-her-kosesindeler/193541.html
+14:17:08 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/dunya-tiyatro-gunune-karar-damgasi/193540.html
+14:17:09 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/oyak-cimentoda-gelecegi-cementalar-insa-edecek/193169.html
+14:17:09 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/bakan-kacir-ihracatimizi-273-milyar-dolara-cikardik/193146.html
+14:17:10 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/korfezde-vatandaslara-deprem-bilinci-anlatildi/193162.html
+14:17:10 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/bakan-kacir-kocaelide-universite-ogrencileriyle-iftarda-bulustu-/193147.html
+14:17:11 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/kocasini-olduren-kadindan-tuyler-urperten-savunma/193145.html
+14:17:11 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/saglik/kocaeli-universitesi-dogum-sagliginda-inovasyonla-fark-yaratiyor/193160.html
+14:17:12 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/8-mart-kadinla-degisir-dunya-temasiyla-kutlanacak/193196.html
+14:17:12 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/iftar-sofrasinda-vatandaslarla-bulustu/193205.html
+14:17:12 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/market-raflarinda-tarihi-gecmis-tavuk-ve-icecek-alarmi/193202.html
+14:17:13 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/deva-partisi-kocaelide-8-marta-ozel-iftar-programi-duzenledi/193198.html
+14:17:13 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/oyak-cimentoda-gelecegi-cementalar-insa-edecek/193169.html
+14:17:14 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/bakan-kacir-ihracatimizi-273-milyar-dolara-cikardik/193146.html
+14:17:14 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/korfezde-vatandaslara-deprem-bilinci-anlatildi/193162.html
+14:17:14 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/bakan-kacir-kocaelide-universite-ogrencileriyle-iftarda-bulustu-/193147.html
+14:17:15 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/kocasini-olduren-kadindan-tuyler-urperten-savunma/193145.html
+14:17:15 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/kocaeli-universitesi-dogum-sagliginda-inovasyonla-fark-yaratiyor/193160.html
+14:17:16 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/8-mart-kadinla-degisir-dunya-temasiyla-kutlanacak/193196.html
+14:17:16 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/iftar-sofrasinda-vatandaslarla-bulustu/193205.html
+14:17:16 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/market-raflarinda-tarihi-gecmis-tavuk-ve-icecek-alarmi/193202.html
+14:17:17 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/1/deva-partisi-kocaelide-8-marta-ozel-iftar-programi-duzenledi/193198.html
+14:17:17 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/yuvacik-baraji-yuzde-93-doldu-kapaklar-acildi/193542.html
+14:17:17 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/chp-golcuk-ilce-orgutunden-geleneksel-iftar-programi/193210.html
+14:17:18 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/video/guncel/su/152.html
+14:17:18 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/video/guncel/su/151.html
+14:17:18 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/video/guncel/su/150.html
+14:17:18 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/video/guncel/izmit-korfezinde-oltaya-3-kiloluk-istakoz-takildi-yeniden-denize-birakildi/148.
+14:17:19 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/video/guncel/kocaeliyi-kesfedin-kocaeli-tanitim-filmi-2020/147.html
+14:17:19 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/spor/kocaelisporda-selcuk-inan-ile-yola-devam-sozlesme-2028e-uzatildi/193592.html
+14:17:20 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/gebzede-30-milyon-liralik-yatiriml
+14:17:20 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Gebze'de 30 milyon liralık yatırımla tamamlanan Sultanorhan Anaokulu açıldı https:
+14:17:20 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/gebzede-30-milyon-liralik-yatirimla-tamamlanan-sultanorhan-anaokulu-acildi/193572.html: HTTP Error 404: 
+14:17:22 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/gebzede-30-milyon-liralik-yatirimla-tamamlanan-sultanorhan-anaokulu-acildi/193572.html: HTTP Error 404: 
+14:17:22 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/basiskele-kart-uygulamasi-4-bine-y
+14:17:22 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Başiskele Kart uygulaması 4 bine yakın kullanıcıya ulaştı https://www.yenikocaeli.
+14:17:23 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/basiskele-kart-uygulamasi-4-bine-yakin-kullaniciya-ulasti/193571.html: HTTP Error 404: 
+14:17:24 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/basiskele-kart-uygulamasi-4-bine-yakin-kullaniciya-ulasti/193571.html: HTTP Error 404: 
+14:17:24 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/spor/korfezli-3-genc-karateci-balkan-samp
+14:17:24 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Körfezli 3 genç karateci Balkan Şampiyonası için milli takıma seçildi https://www.
+14:17:25 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/spor/korfezli-3-genc-karateci-balkan-sampiyonasi-icin-milli-takima-secildi/193570.html: HTTP Error 404: 
+14:17:26 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/spor/korfezli-3-genc-karateci-balkan-sampiyonasi-icin-milli-takima-secildi/193570.html: HTTP Error 404: 
+14:17:26 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/tirin-altindaki-kaskli-katil-agabeyi-cikti/193569.html
+14:17:27 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/polis-adliye/tirin-altindaki-kaskli-katil
+14:17:27 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Tırın altındaki kasklı katil ağabeyi çıktı https://www.yenikocaeli.com/haber/polis
+14:17:27 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/tirin-altindaki-kaskli-katil-agabeyi-cikti/193569.html: HTTP Error 404: 
+14:17:29 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/tirin-altindaki-kaskli-katil-agabeyi-cikti/193569.html: HTTP Error 404: 
+14:17:29 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/gebzede-coken-bina-icin-yeni-rapor/193568.html
+14:17:30 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/polis-adliye/gebzede-coken-bina-icin-yeni
+14:17:31 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Gebze'de çöken bina için yeni rapor https://www.yenikocaeli.com/haber/polis-adliye
+14:17:31 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/gebzede-coken-bina-icin-yeni-rapor/193568.html: HTTP Error 404: 
+14:17:32 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/gebzede-coken-bina-icin-yeni-rapor/193568.html: HTTP Error 404: 
+14:17:33 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/polis-adliye/6-yasindaki-elanin-oldugu-se
+14:17:33 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=6 yaşındaki Ela'nın öldüğü servis kazasında sürücü 'tali', küçük kız 'asli' kusurl
+14:17:33 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/6-yasindaki-elanin-oldugu-servis-kazasinda-surucu-tali-kucuk-kiz-asli-kusurlu-bulundu/193567.html: HTTP Error 404: 
+14:17:34 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/6-yasindaki-elanin-oldugu-servis-kazasinda-surucu-tali-kucuk-kiz-asli-kusurlu-bulundu/193567.html: HTTP Error 404: 
+14:17:35 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/kayiplara-karisan-galericiden-magdura-teselli-senin-derdin-1-bizim-50-ken
+14:17:35 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/polis-adliye/kayiplara-karisan-galericide
+14:17:35 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/kayiplara-karisan-galericiden-magdura-teselli-senin-derdin-1-bizim-50-kendini-uzme/193566.html: HTTP Error 404: 
+14:17:36 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/kayiplara-karisan-galericiden-magdura-teselli-senin-derdin-1-bizim-50-kendini-uzme/193566.html: HTTP Error 404: 
+14:17:37 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/-izmitte-edebiyat-kahramanlari-sok
+14:17:37 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text= İzmit'te edebiyat kahramanları sokaklara indi https://www.yenikocaeli.com/haber/g
+14:17:37 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/-izmitte-edebiyat-kahramanlari-sokaklara-indi/193565.html: HTTP Error 404: 
+14:17:39 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/-izmitte-edebiyat-kahramanlari-sokaklara-indi/193565.html: HTTP Error 404: 
+14:17:39 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/polis-adliye/3-kisinin-oldugu-saldirinin-dugumu-cozuluyor-6-supheli-tutuklandi/193564.
+14:17:40 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/polis-adliye/3-kisinin-oldugu-saldirinin-
+14:17:41 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=3 kişinin öldüğü saldırının düğümü çözülüyor: 6 şüpheli tutuklandı https://www.yen
+14:17:41 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/3-kisinin-oldugu-saldirinin-dugumu-cozuluyor-6-supheli-tutuklandi/193564.html: HTTP Error 404: 
+14:17:42 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/polis-adliye/3-kisinin-oldugu-saldirinin-dugumu-cozuluyor-6-supheli-tutuklandi/193564.html: HTTP Error 404: 
+14:17:42 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/haber/guncel/halk-ekmekte-yeni-fiyat/193563.html
+14:17:43 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/halk-ekmekte-yeni-fiyat/193563.htm
+14:17:44 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Halk ekmekte yeni fiyat https://www.yenikocaeli.com/haber/guncel/halk-ekmekte-yeni
+14:17:44 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/halk-ekmekte-yeni-fiyat/193563.html: HTTP Error 404: 
+14:17:45 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/halk-ekmekte-yeni-fiyat/193563.html: HTTP Error 404: 
+14:17:45 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/spor/kocaelide-dunya-kupasi-coskusu/19356
+14:17:46 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text=Kocaeli'de Dünya Kupası coşkusu https://www.yenikocaeli.com/haber/spor/kocaelide-d
+14:17:46 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/spor/kocaelide-dunya-kupasi-coskusu/193562.html: HTTP Error 404: 
+14:17:47 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/spor/kocaelide-dunya-kupasi-coskusu/193562.html: HTTP Error 404: 
+14:17:48 [INFO] [Yeni Kocaeli] 200 OK: https://www.facebook.com/sharer/sharer.php?u=https://www.yenikocaeli.com/haber/guncel/-kocaelinin-fazla-suyu-sapanca-gol
+14:17:48 [INFO] [Yeni Kocaeli] 200 OK: https://twitter.com/intent/tweet?text= Kocaeli'nin fazla suyu Sapanca Gölü'ne gönderiliyor https://www.yenikocaeli.com/h
+14:17:48 [ERROR] [Yeni Kocaeli] Attempt 1 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/-kocaelinin-fazla-suyu-sapanca-golune-gonderiliyor/193561.html: HTTP Error 404: 
+14:17:50 [ERROR] [Yeni Kocaeli] Attempt 2 failed for https://www.yenikocaeli.com/whatsapp://send?text=https://www.yenikocaeli.com/haber/guncel/-kocaelinin-fazla-suyu-sapanca-golune-gonderiliyor/193561.html: HTTP Error 404: 
+14:17:50 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/icerik/kurumsal/yayin-ilkeleri/2.html
+14:17:50 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/icerik/kurumsal/veri-politikasi/3.html
+14:17:50 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/icerik/kurumsal/kullanim-sartlari/4.html
+14:17:51 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/icerik/kurumsal/kvkk-aydinlatma-metni/5.html
+14:17:51 [INFO] [Yeni Kocaeli] 200 OK: https://www.yenikocaeli.com/icerik/kurumsal/kvkk-bilgi-talep-formu/6.html
+14:17:51 [INFO] [Yeni Kocaeli] Scraped 35 articles.
+14:17:51 [INFO] [Done] Yeni Kocaeli: 35 haber bulundu.
+14:17:51 [INFO] [Saved] Gelecek Partisi Kocaeli’de 6. Yılını Kutladı:Gündem Su Krizi | İzmit | Genel
+14:17:51 [INFO] [Saved] Kandıra’da Güreş Heyecanı 15 Temmuz’da Yaşanacak | Kandıra | Genel
+14:17:51 [INFO] [Saved] Oyuncak Müzesi’nde Kütüphane Haftası’na özelÇocuk atölyeleri | İzmit | Genel
+14:17:51 [INFO] [Saved] Dumlupınar Faciası Gölcük'te Tiyatro Sahnesinde Canlandırıla | Gölcük | Kültürel Etkinlikler
+14:17:51 [INFO] [Saved] Baba ve oğlu sokak ortasında öldüren yaşlı adam:"Keşke dolan | Karamürsel | Genel
+14:17:51 [INFO] [Saved] İzmit Belediyesi araç filosunu büyüttüHedef 2027’de 400 araç | İzmit | Genel
+14:17:51 [INFO] [Saved] “Aileler Sporda Olsun” Projesi Farkındalıkla Büyüyor | İzmit | Genel
+14:17:51 [INFO] [Saved] Körfez Belediyesi özel çocukları unutmadı | Körfez | Genel
+14:17:51 [INFO] [Saved] Umre hayali kabusa döndü: 200 kişi dolandırıldığını iddia ed | İzmit | Genel
+14:17:51 [INFO] [Saved] TEM'de otomobil devrilen tır dorsesinin altında kaldı: Karı- | İzmit | Trafik Kazası
+14:17:51 [INFO] [Saved] Özel bireyler ve basketbolcular potada buluştu | Çayırova | Genel
+14:17:51 [INFO] [Saved] Acar’ın kaleme aldığı “Kocaeli Kandıra Halk Kültürü Kitabı”  | Kandıra | Genel
+14:17:51 [INFO] [Saved] Hekimsen'den mart ayı verilerine ilişkin değerlendirme | İzmit | Genel
+14:17:51 [INFO] [Saved] İzmit Körfezi iki renk oldu: Derenin taşıdığı çamur denizin  | İzmit | Genel
+14:17:51 [INFO] [Done] 108 articles saved in 176.9s.

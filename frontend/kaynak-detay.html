@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaynak Detayları — Kocaeli Haber İzleme</title>
+    <meta name="description" content="Kocaeli haber izleme sistemi kaynak detay sayfası - hangi kanaldan hangi haberler çekildi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f0f1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .header h1 svg { color: #4fc3f7; }
+        .header a {
+            color: #4fc3f7;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border: 1px solid rgba(79,195,247,0.3);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+        .header a:hover {
+            background: rgba(79,195,247,0.1);
+            border-color: #4fc3f7;
+        }
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            gap: 16px;
+            padding: 20px 32px;
+            flex-wrap: wrap;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #1e1e36 0%, #252545 100%);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px;
+            padding: 16px 24px;
+            flex: 1;
+            min-width: 160px;
+            text-align: center;
+        }
+        .stat-card .stat-val {
+            font-size: 28px;
+            font-weight: 800;
+            color: #4fc3f7;
+        }
+        .stat-card .stat-label {
+            font-size: 12px;
+            color: #888;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        /* Content */
+        .content { padding: 0 32px 32px; }
+        /* Source Group */
+        .source-group {
+            background: linear-gradient(135deg, #1a1a2e 0%, #1e1e36 100%);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .source-header {
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .source-header:hover { background: rgba(255,255,255,0.03); }
+        .source-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .source-badge {
+            background: linear-gradient(135deg, #4fc3f7, #0288d1);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+        .toggle-icon {
+            font-size: 20px;
+            color: #666;
+            transition: transform 0.3s;
+        }
+        .source-group.open .toggle-icon { transform: rotate(180deg); }
+        /* Type Summary */
+        .type-summary {
+            display: flex;
+            gap: 8px;
+            padding: 0 24px 12px;
+            flex-wrap: wrap;
+        }
+        .type-tag {
+            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        .type-tag.trafik { background: rgba(244,67,54,0.2); color: #ef5350; }
+        .type-tag.yangin { background: rgba(255,152,0,0.2); color: #ffa726; }
+        .type-tag.elektrik { background: rgba(255,235,59,0.2); color: #ffee58; }
+        .type-tag.hirsizlik { background: rgba(156,39,176,0.2); color: #ab47bc; }
+        .type-tag.kultur { background: rgba(33,150,243,0.2); color: #42a5f5; }
+        /* News Table */
+        .news-table {
+            display: none;
+            padding: 0 12px 16px;
+        }
+        .source-group.open .news-table {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            text-align: left;
+            padding: 10px 12px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        td {
+            padding: 10px 12px;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            vertical-align: top;
+        }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+        td a {
+            color: #4fc3f7;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        td a:hover { text-decoration: underline; }
+        .news-type-cell {
+            font-size: 11px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .news-type-cell.trafik { color: #ef5350; }
+        .news-type-cell.yangin { color: #ffa726; }
+        .news-type-cell.elektrik { color: #ffee58; }
+        .news-type-cell.hirsizlik { color: #ab47bc; }
+        .news-type-cell.kultur { color: #42a5f5; }
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #666;
+            font-size: 16px;
+        }
+        .loading .spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid rgba(79,195,247,0.2);
+            border-top-color: #4fc3f7;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header { padding: 12px 16px; }
+            .stats-bar { padding: 16px; }
+            .content { padding: 0 16px 16px; }
+            .source-header { padding: 12px 16px; }
+            .type-summary { padding: 0 16px 12px; }
+            th, td { padding: 8px; font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 7h16M4 12h16M4 17h10"/>
+            </svg>
+            Kaynak Detayları
+        </h1>
+        <a href="/">← Haritaya Dön</a>
+    </div>
+
+    <div class="stats-bar" id="stats-bar">
+        <div class="stat-card">
+            <div class="stat-val" id="total-sources">—</div>
+            <div class="stat-label">Haber Kaynağı</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val" id="total-news">—</div>
+            <div class="stat-label">Toplam Haber</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val" id="type-trafik">—</div>
+            <div class="stat-label">Trafik Kazası</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val" id="type-yangin">—</div>
+            <div class="stat-label">Yangın</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val" id="type-elektrik">—</div>
+            <div class="stat-label">Elektrik Kesintisi</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val" id="type-hirsizlik">—</div>
+            <div class="stat-label">Hırsızlık</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val" id="type-kultur">—</div>
+            <div class="stat-label">Kültürel Etkinlik</div>
+        </div>
+    </div>
+
+    <div class="content" id="content">
+        <div class="loading">
+            <div class="spinner"></div>
+            Veriler yükleniyor...
+        </div>
+    </div>
+
+    <script>
+        const TYPE_MAP = {
+            "Trafik Kazası": "trafik",
+            "Yangın": "yangin",
+            "Elektrik Kesintisi": "elektrik",
+            "Hırsızlık": "hirsizlik",
+            "Kültürel Etkinlikler": "kultur"
+        };
+
+        async function loadSources() {
+            try {
+                const resp = await fetch("/api/sources");
+                const data = await resp.json();
+                const sources = data.sources || [];
+
+                // Sort by count descending
+                sources.sort((a, b) => b.count - a.count);
+
+                // Calculate global stats
+                let totalNews = 0;
+                const typeCounts = { trafik: 0, yangin: 0, elektrik: 0, hirsizlik: 0, kultur: 0 };
+
+                sources.forEach(src => {
+                    totalNews += src.count;
+                    src.news.forEach(n => {
+                        const cls = TYPE_MAP[n.news_type];
+                        if (cls && typeCounts[cls] !== undefined) typeCounts[cls]++;
+                    });
+                });
+
+                // Update stat cards
+                document.getElementById("total-sources").textContent = sources.length;
+                document.getElementById("total-news").textContent = totalNews;
+                document.getElementById("type-trafik").textContent = typeCounts.trafik;
+                document.getElementById("type-yangin").textContent = typeCounts.yangin;
+                document.getElementById("type-elektrik").textContent = typeCounts.elektrik;
+                document.getElementById("type-hirsizlik").textContent = typeCounts.hirsizlik;
+                document.getElementById("type-kultur").textContent = typeCounts.kultur;
+
+                // Render source groups
+                const content = document.getElementById("content");
+                if (sources.length === 0) {
+                    content.innerHTML = '<div class="loading"><p>Henüz haber verisi bulunamadı. Harita sayfasından "Haberleri Çek" butonuyla veri toplayın.</p></div>';
+                    return;
+                }
+
+                let html = "";
+                sources.forEach((src, idx) => {
+                    // Type summary for this source
+                    const srcTypeCounts = {};
+                    src.news.forEach(n => {
+                        const cls = TYPE_MAP[n.news_type] || "genel";
+                        srcTypeCounts[cls] = (srcTypeCounts[cls] || 0) + 1;
+                    });
+
+                    let typeSummaryHtml = "";
+                    Object.entries(srcTypeCounts).forEach(([cls, count]) => {
+                        const names = { trafik: "Trafik", yangin: "Yangın", elektrik: "Elektrik", hirsizlik: "Hırsızlık", kultur: "Kültürel" };
+                        typeSummaryHtml += `<span class="type-tag ${cls}">${names[cls] || cls}: ${count}</span>`;
+                    });
+
+                    // News table rows
+                    let rowsHtml = "";
+                    src.news.forEach(n => {
+                        const cls = TYPE_MAP[n.news_type] || "";
+                        let dateStr = "—";
+                        if (n.published_date) {
+                            try {
+                                const d = new Date(n.published_date);
+                                dateStr = d.toLocaleDateString("tr-TR", { day: "numeric", month: "short", year: "numeric" });
+                            } catch(e) { dateStr = n.published_date; }
+                        }
+                        rowsHtml += `
+                            <tr>
+                                <td class="news-type-cell ${cls}">${n.news_type}</td>
+                                <td><a href="${n.url}" target="_blank" rel="noopener">${n.title}</a></td>
+                                <td>${n.district || "—"}</td>
+                                <td>${n.location_text || "—"}</td>
+                                <td>${dateStr}</td>
+                            </tr>
+                        `;
+                    });
+
+                    html += `
+                        <div class="source-group ${idx === 0 ? 'open' : ''}" id="src-${idx}">
+                            <div class="source-header" onclick="toggleSource('src-${idx}')">
+                                <div class="source-name">
+                                    <span>📰 ${src.site_name}</span>
+                                    <span class="source-badge">${src.count} Haber</span>
+                                </div>
+                                <span class="toggle-icon">▼</span>
+                            </div>
+                            <div class="type-summary">${typeSummaryHtml}</div>
+                            <div class="news-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Tür</th>
+                                            <th>Başlık</th>
+                                            <th>İlçe</th>
+                                            <th>Konum</th>
+                                            <th>Tarih</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>${rowsHtml}</tbody>
+                                </table>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                content.innerHTML = html;
+            } catch(err) {
+                console.error("Failed to load sources:", err);
+                document.getElementById("content").innerHTML = '<div class="loading"><p style="color:#ef5350;">Veriler yüklenirken hata oluştu.</p></div>';
+            }
+        }
+
+        function toggleSource(id) {
+            document.getElementById(id).classList.toggle("open");
+        }
+
+        // Load on page ready
+        document.addEventListener("DOMContentLoaded", loadSources);
+    </script>
+</body>
+</html>
